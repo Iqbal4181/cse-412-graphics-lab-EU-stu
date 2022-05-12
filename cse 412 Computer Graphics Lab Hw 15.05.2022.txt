@@ -1,0 +1,312 @@
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+#include<windows.h>
+
+#include <GL/glut.h>
+
+void initGL()
+{
+    glClearColor(0.0f,0.0f,0.0f,1.0f);
+}
+
+void display()
+{
+    glClear(GL_COLOR_BUFFER_BIT);
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    /*Top Tin*/
+    glBegin(GL_QUADS);
+    glColor3f(0.5,0.5,0.5);
+    glVertex2f(0.7,0.4);
+    glVertex2f(0.25,0.4);
+    glVertex2f(0.4,0.3);
+    glVertex2f(0.85,0.3);
+    glEnd();
+
+
+     glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.7,0.4);
+    glVertex2f(0.25,0.4);
+    glVertex2f(0.4,0.3);
+    glVertex2f(0.85,0.3);
+    glEnd();
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+       glBegin(GL_QUADS);
+    glColor3f(0.5,0.5,0.5);
+    glVertex2f(0.26,0.39);
+    glVertex2f(0.25,0.4);
+    glVertex2f(0.1,0.3);
+    glVertex2f(0.12,0.3);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.26,0.39);
+    glVertex2f(0.25,0.4);
+    glVertex2f(0.1,0.3);
+    glVertex2f(0.12,0.3);
+    glEnd();
+
+
+    //Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    /*back side*/
+    glBegin(GL_POLYGON);
+    glColor3f(0.0,0.0,1.0);
+    glVertex2f(0.4,0.3);
+    glVertex2f(0.26,0.39);
+    glVertex2f(0.12,0.3);
+    glVertex2f(0.1,0.3);
+    glVertex2f(0.1,0.0);
+    glVertex2f(0.4,0.0);
+    glEnd();
+
+
+        //Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    /*back side Door*/
+    glBegin(GL_QUADS);
+    glColor3f(63.0,0.0,15.0);
+    glVertex2f(0.37,0.0);
+    glVertex2f(0.30,0.0);
+    glVertex2f(0.30,0.20);
+    glVertex2f(0.37,0.20);
+
+    glEnd();
+
+
+//border of door
+
+    glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.37,0.0);
+    glVertex2f(0.30,0.0);
+    glVertex2f(0.30,0.20);
+    glVertex2f(0.37,0.20);
+
+
+    glEnd();
+
+
+        //Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    /*back side window*/
+    glBegin(GL_QUADS);
+    glColor3f(63.0,0.0,15.0);
+    glVertex2f(0.25,0.20);
+    glVertex2f(0.25,0.30);
+    glVertex2f(0.20,0.30);
+    glVertex2f(0.20,0.20);
+
+    glEnd();
+
+        glBegin(GL_LINES);
+    glLineWidth(15.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.25,0.20);
+    glVertex2f(0.25,0.30);
+    glVertex2f(0.20,0.30);
+    glVertex2f(0.20,0.20);
+
+    glEnd();
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+
+        glBegin(GL_QUADS);
+    glColor3f(63.0,0.0,15.0);
+    glVertex2f(0.198,0.20);
+    glVertex2f(0.198,0.30);
+    glVertex2f(0.15,0.30);
+    glVertex2f(0.15,0.20);
+
+    glEnd();
+
+    //line border
+
+        glBegin(GL_LINES);
+    glLineWidth(15.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.198,0.20);
+    glVertex2f(0.198,0.30);
+    glVertex2f(0.15,0.30);
+    glVertex2f(0.15,0.20);
+
+    glEnd();
+
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    /*front side*/
+    glBegin(GL_QUADS);
+    glColor3f(0.0,1.0,0.0);
+    glVertex2f(0.80,0.0);
+    glVertex2f(0.40,0.0);
+    glVertex2f(0.40,0.30);
+    glVertex2f(0.80,0.30);
+
+    glEnd();
+
+    //front side border
+
+        glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.80,0.0);
+    glVertex2f(0.40,0.0);
+    glVertex2f(0.40,0.30);
+    glVertex2f(0.80,0.30);
+
+    glEnd();
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    /*front side window*/
+    glBegin(GL_QUADS);
+    glColor3f(63.0,0.0,15.0);
+    glVertex2f(0.70,0.25);
+    glVertex2f(0.60,0.25);
+    glVertex2f(0.60,0.20);
+    glVertex2f(0.70,0.20);
+
+    glEnd();
+
+    //border of the window
+
+    glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.70,0.25);
+    glVertex2f(0.60,0.25);
+    glVertex2f(0.60,0.20);
+    glVertex2f(0.70,0.20);
+
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(63.0,0.0,15.0);
+    glVertex2f(0.599,0.25);
+    glVertex2f(0.50,0.25);
+    glVertex2f(0.50,0.20);
+    glVertex2f(0.599,0.20);
+
+    glEnd();
+
+    glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+     glVertex2f(0.599,0.25);
+    glVertex2f(0.50,0.25);
+    glVertex2f(0.50,0.20);
+    glVertex2f(0.599,0.20);
+
+    glEnd();
+
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    glBegin(GL_QUADS);
+    glColor3f(63.0,0.0,15.0);
+    glVertex2f(0.599,0.20);
+    glVertex2f(0.50,0.20);
+    glVertex2f(0.50,0.15);
+    glVertex2f(0.599,0.15);
+
+    glEnd();
+
+
+
+    glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.599,0.20);
+    glVertex2f(0.50,0.20);
+    glVertex2f(0.50,0.15);
+    glVertex2f(0.599,0.15);
+
+    glEnd();
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    glBegin(GL_QUADS);
+    glColor3f(63.0,0.0,15.0);
+    glVertex2f(0.70,0.20);
+    glVertex2f(0.60,0.20);
+    glVertex2f(0.60,0.15);
+    glVertex2f(0.70,0.15);
+
+    glEnd();
+
+     glBegin(GL_LINES);
+    glLineWidth(600.0);
+    glColor3f(1.0,1.0,1.0);
+    glVertex2f(0.70,0.20);
+    glVertex2f(0.60,0.20);
+    glVertex2f(0.60,0.15);
+    glVertex2f(0.70,0.15);
+
+    glEnd();
+
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    glFlush();
+
+}
+
+int main(int argc, char** argv)
+{
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+    glutInit(&argc, argv);
+    glutCreateWindow("hw 15.05.2022 Final Lab");
+    glutInitWindowSize(320,320);
+    glutInitWindowPosition(50, 50);
+    glutDisplayFunc(display);
+    initGL();
+    glutMainLoop();
+    return 0;
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
+
+}
+
+//Md.Iqbal Hossain
+//ID: 182400023
+//cse 412 Computer Graphics Lab Hw 15.05.2022
